@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Bella Pizza | Autêntica Pizza Italiana</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="#" class="logo">La Bella Pizza</a>
+            <nav>
+                <ul>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#reservas" class="btn-primary">Reservar Mesa</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Sabor que conta história</h1>
+            <p>A autêntica tradição italiana no coração da cidade.</p>
+            <a href="#reservas" class="btn-cta">Garanta sua Mesa</a>
+        </div>
+    </section>
+
+    <section id="menu" class="menu-highlights">
+        <div class="container">
+            <h2>Nossas Especialidades</h2>
+            <div class="grid">
+                <div class="card">
+                    <div class="card-image" style="background-color: #333;"></div> <!-- Placeholder -->
+                    <h3>Margherita Originale</h3>
+                    <p>Molho de tomate San Marzano, mozzarella di bufala, manjericão fresco.</p>
+                </div>
+                <div class="card">
+                    <div class="card-image" style="background-color: #333;"></div> <!-- Placeholder -->
+                    <h3>Diavola</h3>
+                    <p>Molho de tomate, mozzarella, salame picante, pimenta calabresa.</p>
+                </div>
+                <div class="card">
+                    <div class="card-image" style="background-color: #333;"></div> <!-- Placeholder -->
+                    <h3>Quattro Formaggi</h3>
+                    <p>Mozzarella, gorgonzola, parmesão, provolone.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reservas" class="reservation">
+        <div class="container">
+            <div class="reservation-form-wrapper">
+                <h2>Faça sua Reserva</h2>
+                <p>Venha viver uma experiência inesquecível.</p>
+                <form id="reservationForm">
+                    <div class="form-group">
+                        <label for="name">Nome Completo</label>
+                        <input type="text" id="name" name="name" required placeholder="Seu nome">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="date">Data</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="time">Horário</label>
+                            <input type="time" id="time" name="time" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="guests">Número de Pessoas</label>
+                        <select id="guests" name="guests" required>
+                            <option value="1">1 Pessoa</option>
+                            <option value="2" selected>2 Pessoas</option>
+                            <option value="3">3 Pessoas</option>
+                            <option value="4">4 Pessoas</option>
+                            <option value="5+">5+ Pessoas</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn-submit">Confirmar Reserva</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-info">
+                <h3>La Bella Pizza</h3>
+                <p>Rua das Flores, 123 - Centro</p>
+                <p>(11) 99999-9999</p>
+            </div>
+            <div class="footer-social">
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 La Bella Pizza. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
